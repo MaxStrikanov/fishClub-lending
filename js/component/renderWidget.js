@@ -38,13 +38,14 @@ export const renderWidgetForecast = (widget, data) => {
 	const items = forecast.map((item) => {
 		const date = new Date(item.dt_txt);
 		const weekdays = [
+			'воскресенье',
 			'понедельник',
 			'вторник',
 			'среда',
 			'четверг',
 			'пятница',
 			'суббота',
-			'воскресенье',
+			
 		]
 		const dayOfWeek = weekdays[date.getDay()];
 	

@@ -360,17 +360,29 @@
 		
 		<div class="gallery-items">
 			<div class="gallery-item">
-				<a data-fancybox href="img/images-1-big.png">
+				<a class="gallery-item-link" data-fancybox href="img/images-1-big.png">
 					<img src="img/images-1.png"  alt="" />
+					<figcaption>
+						<img src="/img/search.svg" alt="">
+						<p>Увеличить фото</p>
+					</figcaption>
 				</a>
 			
-				<a data-fancybox href="img/images-4-big.jpg">
+				<a class="gallery-item-link" data-fancybox href="img/images-4-big.jpg">
 					<img src="img/images-4.png"  alt="" />
+					<figcaption>
+						<img src="/img/search.svg" alt="">
+						<p>Увеличить фото</p>
+					</figcaption>
 				</a>
 			</div>
 			<div class="gallery-item">
-				<a data-fancybox="" href="img/images-2-big.png" style="height: 775px;overflow: hidden;">
+				<a class="gallery-item-link" data-fancybox="" href="img/images-2-big.png" style="height: 775px;overflow: hidden;">
 					<img src="img/images-2.png"  alt="" />
+					<figcaption>
+						<img src="/img/search.svg" alt="">
+						<p>Увеличить фото</p>
+					</figcaption>
 				</a>
 				
 				<button data-fancybox-trigger="gallery"  href="javascript:;" class="primary-btn">Больше фото</button>
@@ -560,7 +572,7 @@
 				<div class="fish-nibble-item__img">
 					<img src="/img/fish-5.svg" alt="">
 				</div>
-				<p>Форель радужная</p>
+				<p>Форель янтарная</p>
 			</div>
 			<div class="percent-items" onload="">
 				<div class="percent">
@@ -657,7 +669,7 @@
 					<li class="rules-list__item">Покидая пруд, Гости должны предъявить представителям Клуба сумки, пакеты и всю пойманную рыбу для взвешивания.</li>
 				</ul>
 
-				<button class="promary-btn">Скачать полный список правил.PDF</button>
+				<button class="primary-btn">Скачать полный список правил.PDF</button>
 			</div>
 		</div>
 	</div>
@@ -834,17 +846,74 @@
 			</div>
 		</div>
 
-		<div class="news-second-items">
-			<div class="news-second-item"></div>
-			<div class="news-second-item"></div>
-			<div class="news-second-item"></div>
+		<div class="events-items">
+			<div class="events-item">
+				<span class="events-item-data">2 май 2023</span>
+				<p class="events-item-text">Может показаться странным, но героям были возданы</p>
+			</div>
+			<div class="events-item">
+				<span class="events-item-data">28 апрель 2023</span>
+				<p class="events-item-text">Новая парадигма реальности: обереги никого не защитили</p>
+			</div>
+			<div class="events-item">
+				<span class="events-item-data">23 апрель 2023</span>
+				<p class="events-item-text">Новая парадигма реальности: обереги никого не защитили</p>
+			</div>
+			<div class="events-item-btns">
+				<button class="events-btn_next">
+					<img src="/img/Arrow 1.svg" alt="">
+				</button>
+				<button class="events-btn_prev">
+					<img src="/img/Arrow 1.svg" alt="">
+				</button>
+			</div>
 		</div>
 	</div>
 </section>
 
-
-	<footer class="footer">
-	</footer>
+<footer class="footer">
+	<div class="container">
+		<div class="footer-items">
+			<div class="footer-item__feedback">
+				<div class="footer-item__feedback-form">
+					<h3 class="footer-item__feedback-title">Не нашли ответ на свой вопрос?<br>Оставьте заявку и мы свяжемся с вами.</h3>
+					<form action="">
+						<input type="text" placeholder="Имя Фамилия">
+						<input type="phone" placeholder="+7 --- --- -- --">
+						<input type="text" placeholder="Ваш вопрос">
+						<input type="checkbox" name="" id="">
+						<button>Оставить заявку</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer-item__contacts">
+				<h3 class="footer-item__contacts-title">Контакты</h3>
+				<img src="/img/map.png" alt="">
+				<p class="footer-item__contacts-adress">Адрес</p>
+				<p class="footer-item__contacts-text">Расположен всего в 30 км от МКАД между<br> Бурцевским лесом и рекой Москвой</p>
+				<div class="footer-item__contact">
+					<a href="" class="footer-item__contact-phone">+7 987 654-32-10</a>
+					<a href="" class="footer-item__contact-messanger">
+						<img src="/img/WhatsApp.svg" alt="">
+						<span>WhatsApp</span>
+					</a>
+					<a href="" class="footer-item__contact-messanger">
+						<img src="/img/Telegram.svg" alt="">
+						<span>WhatsApp</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-item">
+			<a href="#" class="footer-item-privacy">Политика конфиденциальности</a>
+			<a href="#" class="footer-item-copyright">2023 © Рыболовный клуб «Язь».</a>
+			<a href="#" class="footer-item-webdev">
+				<p>Разработка сайта –</p>
+				<img src="/img/logo-webdev.svg" alt="">
+			</a>
+		</div>
+	</div>
+</footer>
 
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
