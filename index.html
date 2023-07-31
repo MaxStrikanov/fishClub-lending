@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/media.css">
+	<title>Рыболовный клуб «ЯЗЬ»</title>
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="logo-wrapper">
+					<a href="/" class="logo">
+						<img width="65" src="/img/logo.svg" alt="">
+						<img width="65" src="/img/ЯЗЬ.svg" alt="">
+						<p>Рыболовный клуб</p>
+					</a >
+					<div class="menu-toggle">
+						<label for="check">
+							<input type="checkbox" id="check" />
+							<span></span>
+							<span></span>
+							<span></span>
+						</label>
+					</div>
+				</div>
+				<nav class="menu">
+					<ul class="menu-items">
+						<li><a href="#">Календарь</a></li>
+						<li><a href="#">Правила</a></li>
+						<li><a href="#">Услуги и аренда</a></li>
+						<li><a href="#">Цены</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+
+			<div class="header-contacts">
+				<div class="header-contacts-items">
+					<div class="header-contacts__phone">
+						+7 987 654-32-10
+					</div>
+					<div class="header-contacts__work-time">
+						Работаем с 9:00 до 18:00
+					</div>
+				</div>
+				<button class="btn-phone">
+					<img src="/img/phone.svg" alt="">
+				</button>
+			</div>
+		</header>
+		<div class="header-sub">
+			<div class="big-logo">
+				<img src="/img/logo.svg" alt="">
+				<h1 class="title">Рыболовный клуб «ЯЗЬ»</h1>
+			</div>
+			<p class="header-sub__description">Расположен всего в <b>30 км от МКАД между Бурцевским лесом и рекой Москвой.</b> Создан любителям рыбалки для приятного время препровождения!</p>
+		</div>
+	</div>
+
+	<div class="large-banner">
+		<img src="/img/large-banner.png" alt="">
+	</div>
+	
+	<div class="container">
+		<div class="history">
+			<div class="history-block__left">
+				<h1 class="title">Приглашаем вас к нам, и «Ни хвоста ни чешуи»!</h1>
+				<h4 >Мы реализуем рыбу от лучших поставщиков Карелии и Подмосковья!</h4>
+				<p class="text">Создан любителям рыбалки для приятного время препровождения из-за небольшого размера озера и гарантированной рыбы, шансы поймать благородную рыбу значительно увеличиваются даже у новичков по сравнению с большими сложными озёрами.</p>
+			</div>
+			<div class="history-block__right">
+				<p class="text">Каждодневный мониторинг состояния воды по самым важным показателям, даёт нам возможность следить и предотвращать негативные внешние факторы, потому что форель наиболее чувствительна к загрязнению. Как только появляется токсичное вещество, эти рыбы погибают. Аэрация и каждодневное зарыбление, позволяет поддерживать в тонусе всю рыбу в не содков.</p>
+				<span class="bold-text">И, да! Мы запаслись бутербродами и горячим кофе к вашему приезду. Голод не отвлечёт вас от любимого дела.</span>
+			</div>
+		</div>
+	</div>
+
+<section>
+	<div class="container">
+		<div class="title-wrapper">
+			<h2 class="title-small">Зарыблено</h2>
+			<h1 class="title">Вы всегда точно знаете,<br> сколько рыбы в водоёме</h1>
+		</div>
+
+            <div class="fish-cards-items">
+                <div id="container-chart">
+					<svg version="1.1" style="font-size: 12px;" xmlns="http://www.w3.org/2000/svg" width="1304" height="186" viewBox="0 0 1304 186" aria-hidden="false" aria-label="Interactive chart">
+						<rect fill="none" x="0" y="0" width="1304" height="186" rx="0" ry="0" aria-hidden="true"></rect>
+						<rect fill="none" x="38" y="45" width="1256" height="126" aria-hidden="true"></rect>
+						<g data-z-index="0" aria-hidden="true"></g>
+						<rect fill="none" data-z-index="1" x="38" y="45" width="1256" height="126" aria-hidden="true"></rect>
+						<g data-z-index="1" aria-hidden="true">
+							<path fill="none" stroke-dasharray="none" data-z-index="1" d="M 216.5 45 L 216.5 171" opacity="1"></path>
+							<path fill="none" stroke-dasharray="none" data-z-index="1" d="M 396.5 45 L 396.5 171" opacity="1"></path>
+							<path fill="none" stroke-dasharray="none" data-z-index="1" d="M 575.5 45 L 575.5 171" opacity="1"></path>
+							<path fill="none" stroke-dasharray="none" data-z-index="1" d="M 755.5 45 L 755.5 171" opacity="1"></path>
+							<path fill="none" stroke-dasharray="none" data-z-index="1" d="M 934.5 45 L 934.5 171" opacity="1"></path>
+							<path fill="none" stroke-dasharray="none" data-z-index="1" d="M 1114.5 45 L 1114.5 171" opacity="1"></path>
+							<path fill="none" stroke-dasharray="none" data-z-index="1" d="M 1293.5 45 L 1293.5 171" opacity="1"></path>
+							<path fill="none" stroke-dasharray="none" data-z-index="1" d="M 37.5 45 L 37.5 171" opacity="1"></path>
+						</g>
+						<g data-z-index="3" aria-hidden="false"><g data-z-index="0.1" opacity="1" transform="translate(38,45) scale(1 1)" clip-path="url(#highcharts-q4mdt4x-595-)" aria-hidden="true">
+							<path fill="none" d="M 89.714285714286 51.912000000000006 C 89.714285714286 51.912000000000006 197.37142857143039 47.879999999999995 269.14285714286 47.879999999999995 C 340.914285714288 47.879999999999995 376.800000000002 54.096 448.57142857143 62.16 C 520.342857142858 70.22399999999999 556.228571428572 88.2 628 88.2 C 699.771428571432 88.2 735.6571428571481 35.28 807.42857142858 35.28 C 879.200000000008 35.28 915.0857142857221 59.135999999999555 986.85714285715 67.2 C 1058.62857142857 75.26399999999956 1166.2857142857 75.6 1166.2857142857 75.6" data-z-index="1" stroke="#72A8B8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+							<path fill="none" d="M 89.714285714286 51.912000000000006 C 89.714285714286 51.912000000000006 197.37142857143039 47.879999999999995 269.14285714286 47.879999999999995 C 340.914285714288 47.879999999999995 376.800000000002 54.096 448.57142857143 62.16 C 520.342857142858 70.22399999999999 556.228571428572 88.2 628 88.2 C 699.771428571432 88.2 735.6571428571481 35.28 807.42857142858 35.28 C 879.200000000008 35.28 915.0857142857221 59.135999999999555 986.85714285715 67.2 C 1058.62857142857 75.26399999999956 1166.2857142857 75.6 1166.2857142857 75.6" data-z-index="2" stroke-linecap="round" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="22" style="cursor: pointer;"></path>
+						</g>
+						<g data-z-index="0.1" opacity="1" transform="translate(38,45) scale(1 1)" clip-path="none" style="cursor: pointer;" aria-hidden="false">
+							<path fill="#72A8B8" d="M 807 35.28 A 0 0 0 1 1 807 35.28 Z" data-z-index="-1" fill-opacity="0.25" visibility="hidden"></path>
+							<path fill="#136E88" d="M 89 55.912000000000006 A 4 4 0 1 1 89.00399999933333 55.911998000000175 Z" opacity="1" tabindex="-1" role="img" aria-label="x, 0, 1,764. кг." style="outline: none;" stroke-width="0.0025244915093498577"></path>
+							<path fill="#72A8B8" d="M 269 51.879999999999995 A 4 4 0 1 1 269.00399999933336 51.879998000000164 Z" opacity="1" tabindex="-1" role="img" aria-label="x, 1, 1,860. кг." style="outline: none;" stroke-width="0.000009869571931497845"></path>
+							<path fill="#72A8B8" d="M 448 66.16 A 4 4 0 1 1 448.00399999933336 66.15999800000016 Z" opacity="1" tabindex="-1" role="img" aria-label="x, 2, 1,520. кг." style="outline: none;" stroke-width="0.002849604801500538"></path>
+							<path fill="#72A8B8" d="M 628 92.2 A 4 4 0 1 1 628.0039999993334 92.19999800000016 Z" opacity="1" tabindex="-1" role="img" aria-label="x, 3, 900. кг." style="outline: none;" stroke-width="0.0025244915093498577"></path>
+							<path fill="#72A8B8" d="M 807 39.28 A 4 4 0 1 1 807.0039999993334 39.27999800000017 Z" opacity="1" tabindex="-1" role="img" aria-label="x, 4, 2,160. кг." style="outline: none;" stroke-width="0.002849604801500538"></path>
+							<path fill="#72A8B8" d="M 986 71.2 A 4 4 0 1 1 986.0039999993334 71.19999800000016 Z" opacity="1" tabindex="-1" role="img" aria-label="x, 5, 1,400. кг." style="outline: none;"></path>
+							<path fill="#72A8B8" d="M 1166 79.6 A 4 4 0 1 1 1166.0039999993332 79.59999800000016 Z" opacity="1" tabindex="-1" role="img" aria-label="x, 6, 1,200. кг." style="outline: none;"></path>
+						</g>
+						</g>
+						<g data-z-index="6" opacity="1" transform="translate(38,45) scale(1 1)" aria-hidden="true" style="cursor: pointer;"><g data-z-index="1" transform="translate(71,30)" style="cursor: pointer;">
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">1 764 кг</text>
+						</g>
+						<g data-z-index="1" transform="translate(250,26)" style="cursor: pointer;">
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">1 860 кг</text>
+						</g>
+						<g data-z-index="1" transform="translate(430,40)" style="cursor: pointer;">
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">1 520 кг</text>
+						</g>
+						<g data-z-index="1" transform="translate(614,66)" style="cursor: pointer;">
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">900 кг</text>
+						</g>
+						<g data-z-index="1" transform="translate(789,13)" style="cursor: pointer;">
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">2 160 кг</text>
+						</g>
+						<g data-z-index="1" transform="translate(968,45)" style="cursor: pointer;">
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">1 400 кг</text>
+						</g>
+						<g data-z-index="1" transform="translate(1147,54)" style="cursor: pointer;">
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">1 200 кг</text>
+						</g>
+					</g>
+				</svg>
+
+				</div>
+                <div class="fish-cards-item">
+                        <div class="fish-cards-data">
+                            <div class="fish-cards-data__week">среда</div>
+                            <div class="fish-cards-data__day">31.05</div>     
+                        </div>
+                    <div class="fish-cards-chart">
+                            <!-- <span class="fish-cards-weight">1 764</span>
+                            <span class="fish-cards-text">кг.</span> -->
+						<div class="fish-cards-chart__tag">сегодня</div>	
+                    </div>
+                    <div class="fish-cards-stocked">
+                        <div class="fish-cards-fished">
+                            <p>Зарыблено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-1.png" alt="">
+                                <span class="weight-num">764</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                        <div class="fish-cards-caught">
+                            <p>Выловлено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-2.png" alt="">
+                                <span class="weight-num">45</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="fish-cards-item">
+                        <div class="fish-cards-data">
+                            <div class="fish-cards-data__week">среда</div>
+                            <div class="fish-cards-data__day">31.05</div>     
+                        </div>
+                    <div class="fish-cards-chart">
+                            <!-- <span class="fish-cards-weight">1 764</span>
+                            <span class="fish-cards-text">кг.</span> -->
+                    </div>
+                    <div class="fish-cards-stocked">
+                        <div class="fish-cards-fished">
+                            <p>Зарыблено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-1.png" alt="">
+                                <span class="weight-num">764</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                        <div class="fish-cards-caught">
+                            <p>Выловлено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-2.png" alt="">
+                                <span class="weight-num">45</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="fish-cards-item">
+                        <div class="fish-cards-data">
+                            <div class="fish-cards-data__week">среда</div>
+                            <div class="fish-cards-data__day">31.05</div>     
+                        </div>
+                    <div class="fish-cards-chart">
+                            <!-- <span class="fish-cards-weight">1 764</span>
+                            <span class="fish-cards-text">кг.</span> -->
+                    </div>
+                    <div class="fish-cards-stocked">
+                        <div class="fish-cards-fished">
+                            <p>Зарыблено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-1.png" alt="">
+                                <span class="weight-num">764</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                        <div class="fish-cards-caught">
+                            <p>Выловлено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-2.png" alt="">
+                                <span class="weight-num">45</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="fish-cards-item">
+                        <div class="fish-cards-data">
+                            <div class="fish-cards-data__week">среда</div>
+                            <div class="fish-cards-data__day">31.05</div>     
+                        </div>
+                    <div class="fish-cards-chart">
+                            <!-- <span class="fish-cards-weight">1 764</span>
+                            <span class="fish-cards-text">кг.</span> -->
+                    </div>
+                    <div class="fish-cards-stocked">
+                        <div class="fish-cards-fished">
+                            <p>Зарыблено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-1.png" alt="">
+                                <span class="weight-num">764</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                        <div class="fish-cards-caught">
+                            <p>Выловлено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-2.png" alt="">
+                                <span class="weight-num">45</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="fish-cards-item">
+                        <div class="fish-cards-data">
+                            <div class="fish-cards-data__week">среда</div>
+                            <div class="fish-cards-data__day">31.05</div>     
+                        </div>
+                    <div class="fish-cards-chart">
+                            <!-- <span class="fish-cards-weight">1 764</span>
+                            <span class="fish-cards-text">кг.</span> -->
+                    </div>
+                    <div class="fish-cards-stocked">
+                        <div class="fish-cards-fished">
+                            <p>Зарыблено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-1.png" alt="">
+                                <span class="weight-num">764</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                        <div class="fish-cards-caught">
+                            <p>Выловлено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-2.png" alt="">
+                                <span class="weight-num">45</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="fish-cards-item">
+                        <div class="fish-cards-data">
+                            <div class="fish-cards-data__week">среда</div>
+                            <div class="fish-cards-data__day">31.05</div>     
+                        </div>
+                    <div class="fish-cards-chart">
+                            <!-- <span class="fish-cards-weight">1 764</span>
+                            <span class="fish-cards-text">кг.</span> -->
+                    </div>
+                    <div class="fish-cards-stocked">
+                        <div class="fish-cards-fished">
+                            <p>Зарыблено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-1.png" alt="">
+                                <span class="weight-num">764</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                        <div class="fish-cards-caught">
+                            <p>Выловлено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-2.png" alt="">
+                                <span class="weight-num">45</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="fish-cards-item">
+                        <div class="fish-cards-data">
+                            <div class="fish-cards-data__week">среда</div>
+                            <div class="fish-cards-data__day">31.05</div>     
+                        </div>
+                    <div class="fish-cards-chart">
+                            <!-- <span class="fish-cards-weight">1 764</span>
+                            <span class="fish-cards-text">кг.</span> -->
+                    </div>
+                    <div class="fish-cards-stocked">
+                        <div class="fish-cards-fished">
+                            <p>Зарыблено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-1.png" alt="">
+                                <span class="weight-num">764</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                        <div class="fish-cards-caught">
+                            <p>Выловлено</p>
+                            <div class="fish-cards-img-weight">
+                                <img src="/img/fishing-2.png" alt="">
+                                <span class="weight-num">45</span>
+                                <span class="weight-str">кг.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+</section>
+
+<section id="gallery">
+	<div class="container">
+		<div class="title-wrapper">
+			<h2 class="title-small">Галерея</h2>
+			<h1 class="title">Уникальная природа созданная <br>в стиле скандинавских стран</h1>
+		</div>
+		
+		<div class="gallery-items">
+			<div class="gallery-item">
+				<a class="gallery-item-link" data-fancybox href="img/images-1-big.png">
+					<img src="img/images-1.png"  alt="" />
+					<figcaption>
+						<img src="/img/search.svg" alt="">
+						<p>Увеличить фото</p>
+					</figcaption>
+				</a>
+			
+				<a class="gallery-item-link" data-fancybox href="img/images-4-big.jpg">
+					<img src="img/images-4.png"  alt="" />
+					<figcaption>
+						<img src="/img/search.svg" alt="">
+						<p>Увеличить фото</p>
+					</figcaption>
+				</a>
+			</div>
+			<div class="gallery-item">
+				<a class="gallery-item-link" data-fancybox="" href="img/images-2-big.png" style="height: 775px;overflow: hidden;">
+					<img src="img/images-2.png"  alt="" />
+					<figcaption>
+						<img src="/img/search.svg" alt="">
+						<p>Увеличить фото</p>
+					</figcaption>
+				</a>
+				
+				<button data-fancybox-trigger="gallery"  href="javascript:;" class="primary-btn">Больше фото</button>
+			</div>
+
+			
+		</div>
+		
+			<div style="display:none">
+				<a data-fancybox="gallery"
+					href="https://images.unsplash.com/photo-1609859682240-6860cf3d99d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1336&q=80">
+				</a>
+				<a data-fancybox="gallery"
+					href="https://images.unsplash.com/photo-1526416469077-94d15f0e33bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1325&q=80">
+				</a>
+				<a data-fancybox="gallery"
+					href="https://images.unsplash.com/photo-1429276755748-a5951d965731?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1507&q=80">
+				</a>
+				<a data-fancybox="gallery"
+					href="https://images.unsplash.com/photo-1429276755748-a5951d965731?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1507&q=80">
+				</a>
+			</div>
+	</div>
+</section>
+
+<section id="calendar-fishman">
+	<div class="container">
+		<div class="title-wrapper">
+			<h2 class="title-small">Календарь рыбака</h2>
+			<h1 class="title">Прогноз погоды <br>и клёва рыбы на 7 дней</h1>
+		</div>
+		<div class="calendary-fish-items">
+			<div class="calendary-fish-item">
+				<div class="calendary-fish-item__img">
+					<img src="/img/logo.svg" alt="">
+				</div>
+				<p class="calendary-fish-item__title">Рыболовный клуб «ЯЗЬ»</p>
+				<span class="calendary-fish-item__text">Таким образом, курс на социально-ориентированный национальный проект</span>
+			</div>
+			<div id="app"></div>
+			<div class="fish-nibble-item">
+				<div class="fish-nibble-item__img">
+					<img src="/img/fish-4.svg" alt="">
+				</div>
+				<p>Форель озёрная</p>
+			</div>
+			<div class="percent-items" onload="">
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+			</div>
+			<div class="fish-nibble-item">
+				<div class="fish-nibble-item__img">
+					<img src="/img/fish-6.svg" alt="">
+				</div>
+				<p>Форель радужная</p>
+			</div>
+			<div class="percent-items" onload="">
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+			</div>
+			<div class="fish-nibble-item">
+				<div class="fish-nibble-item__img">
+					<img src="/img/fish-5.svg" alt="">
+				</div>
+				<p>Форель янтарная</p>
+			</div>
+			<div class="percent-items" onload="">
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle  
+							cx="30" 
+							cy="30" 
+							r="30">
+						</circle>
+					</svg>
+					<div class="percent-num"><span>%</span></div>
+            	</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>
+
+<section id="rules">
+	<div class="container">
+		<div class="title-wrapper">
+			<h2 class="title-small">Правила</h2>
+			<h1 class="title">Ознакомьтесь с правилами<br>ловли на нашем водоёме</h1>
+		</div>
+
+		<div class="rules-items">
+			<div class="rules-item">
+				<img src="/img/images-5.png" alt="">
+			</div>
+			<div class="rules-item">
+				<h3>Правила нахождения на территории клуба:</h3>
+
+				<ul class="rules-list-items">
+					<li class="rules-list__item">Лов рыбы на водоёме и нахождение на территории клуба, производится согласно оплаченной путёвке по тарифам, размещённым на информационной доске в здании Администрации.</li>
+					<li class="rules-list__item">Одна путёвка действительна на одного рыболова старше 14 лет, вне зависимости от того, занимается он ловом рыбы или нет, оплачивает своё пребывание согласно действующему тарифу.</li>
+					<li class="rules-list__item">Каждый Гость клуба может бесплатно привести с собой в сопровождении женщину или детей до 14 лет, если они не будут принимать участие в рыбной ловле. Для всех свыше этого лимита необходимо приобретать «гостевую путёвку».</li>
+					<li class="rules-list__item">До самого конца рыбалки Гости обязаны сохранять путёвку и при необходимости предъявлять её по первой просьбе представителя Клуба;</li>
+					<li class="rules-list__item">Покидая пруд, Гости должны предъявить представителям Клуба сумки, пакеты и всю пойманную рыбу для взвешивания.</li>
+				</ul>
+
+				<button class="primary-btn">Скачать полный список правил.PDF</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="sales">
+	<div class="container">
+		<div class="title-wrapper">
+			<h2 class="title-small">Всё для рыбалки</h2>
+			<h1 class="title">Стоимость инвентаря <br>для ловли: продажа и аренда</h1>
+		</div>
+		<div class="sales-items">
+			<div class="sales-item">
+				<img src="/img/sales-1.png" alt="">
+				<div class="sales-title">Удочки и спиннинги</div>
+				<p class="sales-text">Друзья, напоминаем вам о копчёной рыбке, которую вы можете приобрести у нас на водоёме. Ассортимент постоянно пополняется.</p>
+				<div class="sales-price">
+					от<span>1399</span>₽/час
+				</div>
+			</div>
+			<div class="sales-item">
+				<img src="/img/sales-2.png" alt="">
+				<div class="sales-title">Садки и подсадки</div>
+				<p class="sales-text">Друзья, напоминаем вам о копчёной рыбке, которую вы можете приобрести у нас на водоёме. Ассортимент постоянно пополняется.</p>
+				<div class="sales-price">
+					от<span>599</span>₽/час
+				</div>
+			</div>
+			<div class="sales-item">
+				<img src="/img/sales-3.png" alt="">
+				<div class="sales-title">Продажа приманок</div>
+				<p class="sales-text">Друзья, напоминаем вам о копчёной рыбке, которую вы можете приобрести у нас на водоёме. Ассортимент постоянно пополняется.</p>
+				<div class="sales-price">
+					от<span>699</span>₽/час
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="services">
+	<div class="container">
+		<div class="title-wrapper">
+			<h2 class="title-small">Продажа</h2>
+			<h1 class="title">Стоимость рыбы <br>и услуг по вашему улову</h1>
+		</div>
+
+		<div class="sales-items">
+			<div class="sales-item">
+				<img src="/img/sales-4.png" alt="">
+				<div class="sales-title">Продажа копченой рыбы</div>
+				<p class="sales-text">Друзья, напоминаем вам о копчёной рыбке, которую вы можете приобрести у нас на водоёме. Ассортимент постоянно пополняется.</p>
+				<div class="sales-price">
+					от<span>2399</span>₽/час
+				</div>
+				<span class="sales-tag">Продажа на месте</span>
+			</div>
+			<div class="sales-item">
+				<img src="/img/sales-5.png" alt="">
+				<div class="sales-title">Копчение пойманной рыбы</div>
+				<p class="sales-text">Друзья, напоминаем вам о копчёной рыбке, которую вы можете приобрести у нас на водоёме. Ассортимент постоянно пополняется.</p>
+				<div class="sales-price">
+					от<span>2199</span>₽/час
+				</div>
+				<span class="sales-tag">Уточняйте у администрации по телефону клуба</span>
+			</div>
+			<div class="sales-item">
+				<img src="/img/sales-6.png" alt="">
+				<div class="sales-title">Чистка пойманной рыбы</div>
+				<p class="sales-text">Друзья, напоминаем вам о копчёной рыбке, которую вы можете приобрести у нас на водоёме. Ассортимент постоянно пополняется.</p>
+				<div class="sales-price">
+					от<span>1499</span>₽/час
+				</div>
+				<span class="sales-tag">Продажа на месте</span>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<div class="large-banner">
+		<img src="/img/3ndimage.png" alt="">
+	</div>
+
+<section id="prices">
+	<div class="container">
+		<div class="title-wrapper">
+			<h2 class="title-small">Цены</h2>
+			<h1 class="title">Стоимость рыбной ловли<br> и входа на территорию клуба </h1>
+		</div>
+		<div class="prices-items">
+			<div class="prices-item">
+				<h5 class="prices-item-title">Стоимость путевки для входа:</h5>
+				<div class="prices-item-wrap">
+					<h1 class="title">500
+						<span>руб. </span>
+					</h1>
+					<div class="prices-item-smalltext">приобретают все мужчины, даже<br>не принимающие участие в рыбалке</div>
+				</div>
+				<h5 class="prices-item-title">Оплата путёвки осуществляется до выхода на водоём!</h5>
+				<p class="prices-item-text">
+				Для детей до 14 лет и женщин в сопровождении рыбака-мужчины, оплатившего путёвку, рыбалка на снасти рыбака и нахождение на территории клуба бесплатно.
+				</p>
+				<div class="prices-item-text__warn">
+					<div class="prices-item-text__warn-img">
+						<img src="/img/!.svg" alt="">
+					</div>
+					<div class="prices-item-text__warn-text">
+						<p>ОТПУСКАТЬ ПОЙМАННУЮ РЫБУ ЗАПРЕЩЕНО<br> ИСПОЛЬЗОВАНИЕ CАДКА и ПОДСАЧИКА ОБЯЗАТЕЛЬНО</p>
+						<span>Запрещено употребление алкоголя, как на парковке,<br> так и на любой территории клуба.</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="prices-item">
+				<h5 class="prices-item-title">Необходимо на выходе предъявить к взвешиванию ВСЮ пойманную рыбу и оплатить общий улов по следующей цене:</h5>
+
+				<div class="fish-cost-items">
+					<div class="fish-cost-item">
+						<img src="/img/fish-4.svg" alt="">
+						<div class="fish-cost-item__name">Форель озёрная</div>
+						<div class="fish-cost-item__price">850
+							<span>₽/кг</span>
+						</div>
+					</div>
+					<div class="fish-cost-item">
+						<img src="/img/fish-6.svg" alt="">
+						<div class="fish-cost-item__name">Форель радужная</div>
+						<div class="fish-cost-item__price">900
+							<span>₽/кг</span>
+						</div>
+					</div>
+					<div class="fish-cost-item">
+						<img src="/img/fish-5.svg" alt="">
+						<div class="fish-cost-item__name">Форель янтарная</div>
+						<div class="fish-cost-item__price">750
+							<span>₽/кг</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="news">
+	<div class="container">
+		<div class="title-wrapper">
+			<h2 class="title-small">Новости и события</h2>
+			<h1 class="title">Отдых в подмосковье на высшем уровне <br>
+— рыболовный клуб «ЯЗЬ» </h1>
+		</div>
+		<div class="news-items">
+			<div class="news-item">
+				<img src="/img/news-3.png" alt="">
+				<span class="news-data">31 май 2023</span>
+				<div class="news-title">Расширение количества мест рыбалки</div>
+				<p class="news-text">Лишь предприниматели в сети интернет, вне зависимости от их уровня, должны быть объявлены нарушающими общечеловеческие нормы этики и морали. Также как существующая теория однозначно определяет каждого участника как способного принимать собственные решения касаемо системы обучения кадров, соответствующей насущным потребностям. Ясность нашей позиции очевидна: дальнейшее развитие различных форм деятельности.</p>
+				<a class="news-readmore">Читать полностью</a>
+			</div>
+			<div class="news-item">
+				<img src="/img/news-2.png" alt="">
+				<span class="news-data">12 май 2023</span>
+				<div class="news-title">Рекордный улов в рыболовном клубе «ЯЗЬ»</div>
+				<p class="news-text">Таким образом, консультация с широким активом не оставляет шанса для форм воздействия. Приятно, граждане, наблюдать, как многие известные личности лишь добавляют фракционных разногласий и смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности. Учитывая ключевые сценарии поведения, выбранный нами инновационный путь в значительной степени обусловливает важность поставленных обществом задач.</p>
+				<a class="news-readmore">Читать полностью</a>
+			</div>
+			<div class="news-item">
+				<img src="/img/news-3.png" alt="">
+				<span class="news-data">7 май 2023</span>
+				<div class="news-title">Пополнение ассортимента приманок</div>
+				<p class="news-text">Лишь стремящиеся вытеснить традиционное производство, нанотехнологии, вне зависимости от их уровня, должны быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. А ещё действия представителей оппозиции формируют глобальную экономическую сеть и при этом — ассоциативно распределены по отраслям. </p>
+				<a class="news-readmore">Читать полностью</a>
+			</div>
+		</div>
+
+		<div class="events-items">
+			<div class="events-item">
+				<span class="events-item-data">2 май 2023</span>
+				<p class="events-item-text">Может показаться странным, но героям были возданы</p>
+			</div>
+			<div class="events-item">
+				<span class="events-item-data">28 апрель 2023</span>
+				<p class="events-item-text">Новая парадигма реальности: обереги никого не защитили</p>
+			</div>
+			<div class="events-item">
+				<span class="events-item-data">23 апрель 2023</span>
+				<p class="events-item-text">Новая парадигма реальности: обереги никого не защитили</p>
+			</div>
+			<div class="events-item-btns">
+				<button class="events-btn_next">
+					<img src="/img/Arrow 1.svg" alt="">
+				</button>
+				<button class="events-btn_prev">
+					<img src="/img/Arrow 1.svg" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-items">
+			<div class="footer-item__feedback">
+				<div class="footer-item__feedback-form">
+					<h3 class="footer-item__feedback-title">Не нашли ответ на свой вопрос?<br>Оставьте заявку и мы свяжемся с вами.</h3>
+					<form action="">
+						<input type="text" placeholder="Имя Фамилия">
+						<input type="phone" placeholder="+7 --- --- -- --">
+						<input type="text" placeholder="Ваш вопрос">
+						<input type="checkbox" name="" id="">
+						<button>Оставить заявку</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer-item__contacts">
+				<h3 class="footer-item__contacts-title">Контакты</h3>
+				<img src="/img/map.png" alt="">
+				<p class="footer-item__contacts-adress">Адрес</p>
+				<p class="footer-item__contacts-text">Расположен всего в 30 км от МКАД между<br> Бурцевским лесом и рекой Москвой</p>
+				<div class="footer-item__contact">
+					<a href="" class="footer-item__contact-phone">+7 987 654-32-10</a>
+					<a href="" class="footer-item__contact-messanger">
+						<img src="/img/WhatsApp.svg" alt="">
+						<span>WhatsApp</span>
+					</a>
+					<a href="" class="footer-item__contact-messanger">
+						<img src="/img/Telegram.svg" alt="">
+						<span>WhatsApp</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-item">
+			<a href="#" class="footer-item-privacy">Политика конфиденциальности</a>
+			<a href="#" class="footer-item-copyright">2023 © Рыболовный клуб «Язь».</a>
+			<a href="#" class="footer-item-webdev">
+				<p>Разработка сайта –</p>
+				<img src="/img/logo-webdev.svg" alt="">
+			</a>
+		</div>
+	</div>
+</footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<!-- <script src="https://kit.fontawesome.com/a0b2537197.js" crossorigin="anonymous"></script> -->
+	
+	<!-- <script src="/js/xlsx.full.min.js"></script> -->
+	<script src="/js/widget.js" type="module"  ></script>
+	<script src="/js/index.js" ></script>
+	
+</body>
+
+</html>
