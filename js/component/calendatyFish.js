@@ -1,7 +1,6 @@
 
 export const calendaryFish = async () => {
-    const dataCurrent = document.querySelectorAll('.fish-cards-data__day')
-    const weekDay = document.querySelectorAll('.week-day');
+
     const percent = document.querySelectorAll('.percent svg circle:last-child');
     const percentNum = document.querySelectorAll('.percent-num')
 
@@ -78,23 +77,4 @@ document.addEventListener("DOMContentLoaded", filterFish())
 // 		percentNum[i].textContent = `${nibbleLow}%`
 // 	}
 // }))
-
-function GetDates() {
-    const aryDates = [];
-    for (let i = 0; i <= 7; i++) {
-        let currentDate = new Date();
-        currentDate.setDate(currentDate.getDate() + i);
-        aryDates.push(currentDate.toLocaleString('ru-RU', {
-    day: 'numeric',
-    month: 'numeric'
-}));
-    }
-    return aryDates;
-}
-
-const aryDates = GetDates();
-
-    dataCurrent.forEach((item, i) => {
-        item.textContent = aryDates[i]
-    })
 }
