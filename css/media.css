@@ -191,4 +191,44 @@
 	.events-items {
 		gap: 0px;
 	}
+	.fish-cost-item__price {
+
+    font-size: 16px;
+    text-align: center;
+
+}
+.fish-cost-item__name {
+    font-size: 12px;
+    max-width: 100%;
+}
+
+.fish-cost-item {
+    grid-template-columns: 140px 150px 90px;
+    grid-template-rows: 85px;
+}
+
+.fish-cost-item img {
+    max-width: 100%;
+}
+
+ul.rules-list-items {
+    padding: 20px;
+    /* margin: 10px; */
+}
+
+.rules-list__item {
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+.sales-item {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.calendary-fish-items {
+
+    overflow-x: scroll;
+    scroll-snap-type: y mandatory;
+    overflow-y: hidden;
+}
 }
