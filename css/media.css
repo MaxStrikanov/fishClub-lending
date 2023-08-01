@@ -89,7 +89,9 @@
 	}
 	.footer-item {
 		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: center;
+		gap: 10px;
 	}
 	.footer-item > a {
 		font-size: 12px;
@@ -106,8 +108,24 @@
 		margin-left: 0px;
 		margin-top: 16px;
 	}
-	.footer-item__contacts-text {
+	.footer-item__contacts-text, 
+	.header-sub__description,
+	.text {
 		font-size: 12px;
 	}
-
+	.big-logo {
+		max-width: 300px;
+	}
+	.big-logo img {
+		width: 54px;
+		height: 54px;
+	}
+	.large-banner {
+		margin-top: 24px;
+		height: 159px;
+	}
+	.large-banner img {
+		height: 100%;
+		object-fit: cover;
+	}
 }
