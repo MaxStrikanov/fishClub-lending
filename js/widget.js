@@ -1,6 +1,7 @@
 
-import { calendaryFish } from './component/calendatyFish.js';
-import startWidget from './component/widgetSevice.js'
+import { calendaryFish } from './components/calendatyFish.js';
+
+import startWidget from './components/widgetSevice.js'
 
 const init = async (app) => {
 

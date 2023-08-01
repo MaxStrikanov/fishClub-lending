@@ -89,7 +89,9 @@
 	}
 	.footer-item {
 		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: center;
+		gap: 10px;
 	}
 	.footer-item > a {
 		font-size: 12px;
@@ -106,8 +108,87 @@
 		margin-left: 0px;
 		margin-top: 16px;
 	}
-	.footer-item__contacts-text {
+	.footer-item__contacts-text, 
+	.header-sub__description,
+	.text {
 		font-size: 12px;
 	}
+	.big-logo {
+		max-width: 300px;
+	}
+	.big-logo img {
+		width: 54px;
+		height: 54px;
+	}
+	.large-banner {
+		margin-top: 24px;
+		height: 159px;
+	}
+	.large-banner img {
+		height: 100%;
+		object-fit: cover;
+	}
+	.gallery-item {
+		display: block;
+	}
+	.primary-btn {
+		padding: 15px 30px;
+	}
+	.gallery-items {
+		display: inline-flex;
+		align-items: flex-start;
+		margin-top: 10px;
+		gap: 10px;
+	}
+	.fish-cards-items {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+	#container-chart svg {
+		width: calc(1304px - 100%);
+	}
+	.fish-cards-data__week {
+    font-size: 12px;
+    text-transform: inherit;
+}
+	.fish-cards-data__day,
+	span.weight-num {
+		font-size: 13px;
+	}
+	.fish-cards-chart__tag {
+		display: none;
+	}
+	span.weight-str, 
+	.fish-cards-stocked p {
+		font-size: 12px;
+	}
+	.rules-item {
+		width: 100%;
+	}
+	.rules-item img {
+		width: 100%;
+		display: none;
+	}
 
+	.rules-items {
+		display: block;
+	}
+	.sales-items,
+	.news-items {
+		gap: 15px;
+		overflow-x: auto;
+		overflow-y: hidden;
+		scroll-snap-type: y mandatory;
+		flex-wrap: nowrap;
+	}
+	.prices-item:last-child {
+		max-width: 100%;
+	}
+	.news-title {
+		font-size: 20px;
+	}
+	.events-items {
+		gap: 0px;
+	}
 }

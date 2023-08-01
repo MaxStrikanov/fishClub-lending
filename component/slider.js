@@ -1,5 +1,5 @@
 const slider = () => {
-	const sliderSelector = '.swiper-container',
+	const sliderSelector = '.swiper',
 		options = {
 			init: false,
 			loop: true,

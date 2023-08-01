@@ -77,7 +77,7 @@ const filterFish = () => {
 	}
 }}
 
-document.addEventListener("DOMContentLoaded", filterFish())
+//document.addEventListener("DOMContentLoaded", filterFish())
 // weekDay.forEach((elem, i) => {
 // 	if (elem.textContent === 'воскресенье') {
 // 		percent[i].style.cssText = `stroke-dashoffset: calc(340px - (340px * ${nibbleHigh}) / 100); stroke: #6BAE37;`
@@ -95,22 +95,4 @@ document.addEventListener("DOMContentLoaded", filterFish())
 // 	}
 // }))
 
-function GetDates() {
-    const aryDates = [];
-    for (let i = 0; i <= 7; i++) {
-        let currentDate = new Date();
-        currentDate.setDate(currentDate.getDate() + i);
-        aryDates.push(currentDate.toLocaleString('ru-RU', {
-    day: 'numeric',
-    month: 'numeric'
-}));
-    }
-    return aryDates;
-}
-
-const aryDates = GetDates();
-
-    dataCurrent.forEach((item, i) => {
-        item.textContent = aryDates[i]
-    })
 }

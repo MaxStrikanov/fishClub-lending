@@ -1,5 +1,5 @@
 import { fetchForecast, fetchWeather } from './APIservice.js';
-import { renderWidgetForecast, renderWidgetToday, showError } from './renderWidget.js';
+import { renderWidgetForecast,  showError } from './renderWidget.js';
 
 export const startWidget = async ( widget) => {
 
@@ -8,14 +8,7 @@ export const startWidget = async ( widget) => {
 		widget.classList.add('calendar')
 	}
 
-	const dataWeather = await fetchWeather()
 
-	if (dataWeather.success) {
-		renderWidgetToday(widget, dataWeather.data);
-	
-	} else {
-		showError(dataWeather.error)
-	}
 
 	const dataForecast = await fetchForecast()
 

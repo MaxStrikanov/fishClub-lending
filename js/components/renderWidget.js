@@ -1,40 +1,14 @@
 import { addZero,  getCurrentDataTime } from './helper.js';
 const currentDataTime = getCurrentDataTime();
-export const renderWidgetToday = (widget, data) => {
-	const currentDataTime = getCurrentDataTime();
 
-	widget.insertAdjacentHTML('beforeend' ,
-		`<div class="calendar-item">
-			<div class="calendar-day">
-				<div class="week-day">${currentDataTime.dayOfWeek}</div>
-				<div class="data-short">${currentDataTime.dayOfMonth}.${currentDataTime.month}</div>
-			</div>
-			<div class="weather-img">
-				<img src="/icon/${data.weather[0].icon}.svg" alt="">
-				<p class="weather-description">${data.weather[0].description}</p>
-			</div>
-			<div class="weather-deg">${(data.main.temp - 273.15).toFixed(0)}°C</div>
-			<div class="weather-wind">
-				<div class="weather-wind_route">
-					<img style = "transform: rotate(${135 + data.wind.deg}deg);" src="/icon/wind.svg" alt="">
-				</div>
-				<div class="weather-wind_speed">${(data.wind.speed).toFixed(0)} м/c</div>
-			</div>
-			<div class="weather-pressure">
-				<div class="weather-pressure_num">${(data.main.pressure * 0.75).toFixed(0)}</div>
-				<div class="weather-pressure_text">мм рт. ст.</div>
-			</div>
-		`
-	)
-};
 
 export const renderWidgetForecast = (widget, data) => {
-	console.log(data);
+	
 	const forecast = data.list.filter(item => 
 		new Date(item.dt_txt).getHours() === 12 
 		
 	);
-
+	
 	const items = forecast.map((item) => {
 		const date = new Date(item.dt_txt);
 		const weekdays = [
@@ -50,6 +24,7 @@ export const renderWidgetForecast = (widget, data) => {
 		const dayOfWeek = weekdays[date.getDay()];
 	
 		const widgetDayItem = document.createElement('div');
+
 		widgetDayItem.className = 'calendar-item';
 		widgetDayItem.insertAdjacentHTML('beforeend', `
 		<div class="calendar-day">
@@ -71,12 +46,37 @@ export const renderWidgetForecast = (widget, data) => {
 				<div class="weather-pressure_num">${(item.main.pressure * 0.75).toFixed(0)}</div>
 				<div class="weather-pressure_text">мм рт. ст.</div>
 			</div>
+			<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle cx="30" cy="30" r="30" style="stroke-dashoffset: calc(58.8px); stroke: rgb(243, 205, 68);">
+						</circle>
+					</svg>
+					<div class="percent-num">72%</div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle cx="30" cy="30" r="30" style="stroke-dashoffset: calc(58.8px); stroke: rgb(243, 205, 68);">
+						</circle>
+					</svg>
+					<div class="percent-num">72%</div>
+            	</div>
+				<div class="percent">
+					<svg>
+						<circle cx="30" cy="30" r="30"></circle>
+						<circle cx="30" cy="30" r="30" style="stroke-dashoffset: calc(58.8px); stroke: rgb(243, 205, 68);">
+						</circle>
+					</svg>
+					<div class="percent-num">72%</div>
+            	</div>
 		`);
 
 		return widgetDayItem;
 	})
 
 	widget.append(...items)
+	
 
 }; 
 
