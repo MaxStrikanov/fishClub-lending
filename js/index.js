@@ -22,13 +22,12 @@ const weekdays = [
 
 function GetDates() {
     const aryDates = [];
-    for (let i = 0; i <= 7; i++) {
+    for (let i = 0; i <= 6; i++) {
         let currentDate = new Date();
-        currentDate.setDate(currentDate.getDate() + i);
+        currentDate.setDate(currentDate.getDate() - i);
         aryDates.push(currentDate.toLocaleString('ru-RU', {
     day: 'numeric',
     month: 'numeric',
-	weekday: 'long',
 }));
     }
     return aryDates;
@@ -38,16 +37,32 @@ const aryDates = GetDates();
 
 dataWeek.forEach((item, i) => {
 	const aryDates = [];
-    for (let i = 0; i <= 7; i++) {
+    for (let i = 0; i <= 6; i++) {
         let currentDate = new Date();
-        currentDate.setDate(currentDate.getDate() + i);
+        currentDate.setDate(currentDate.getDate() - i);
         aryDates.push(currentDate.toLocaleString('ru-RU', {
 	weekday: 'long',
 	}));
 }
-
 	item.textContent = aryDates[i]
 })
+
 dataCurrent.forEach((item, i) => {
+	
     item.textContent = aryDates[i]
 })
+
+
+const swiper = new Swiper('.swiper', {
+	slidesPerView: 3,
+	navigation: {
+		nextEl: '.events-btn_next',
+		prevEl: '.events-btn_prev',
+	},
+	breakpoints: {
+    // when window width is >= 320px
+    420: {
+		slidesPerView: 1,
+    },    
+	}
+});
