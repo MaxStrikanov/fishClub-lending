@@ -38,11 +38,11 @@
 				</div>
 				<nav class="menu">
 					<ul class="menu-items">
-						<li><a href="#">Календарь</a></li>
-						<li><a href="#">Правила</a></li>
-						<li><a href="#">Услуги и аренда</a></li>
-						<li><a href="#">Цены</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a class="menu-item-link" data-link="calendar-fishman" >Календарь</a></li>
+						<li><a class="menu-item-link" data-link="rules" >Правила</a></li>
+						<li><a class="menu-item-link" data-link="sales" >Услуги и аренда</a></li>
+						<li><a class="menu-item-link" data-link="prices" >Цены</a></li>
+						<li><a class="menu-item-link" data-link="contacts" >Контакты</a></li>
 					</ul>
 				</nav>
 
@@ -694,7 +694,7 @@
 	</div>
 </section>
 
-<footer class="footer">
+<footer class="footer" id="contacts">
 	<div class="container">
 		<div class="footer-items">
 			<div class="footer-item__feedback">
@@ -704,7 +704,13 @@
 						<input type="text" placeholder="Имя Фамилия">
 						<input type="phone" placeholder="+7 --- --- -- --">
 						<input type="text" placeholder="Ваш вопрос">
-						<input type="checkbox" name="" id="">
+						<label class="form-control">
+							<input type="checkbox" name="checkbox" />
+							Я даю согласие на обработку
+							<span>Персональных данных</span>
+						</label>
+							
+						
 						<button>Оставить заявку</button>
 					</form>
 				</div>
