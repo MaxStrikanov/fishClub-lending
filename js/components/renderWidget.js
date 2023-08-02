@@ -22,6 +22,12 @@ export const renderWidgetForecast = (widget, data) => {
 			
 		]
 		const dayOfWeek = weekdays[date.getDay()];
+
+		function randomColor() {
+			
+		}
+
+
 		function colorCircle ()  {
 			let color = '#F19450'
 			if(dayOfWeek == 'воскресенье' || dayOfWeek == 'суббота') {
