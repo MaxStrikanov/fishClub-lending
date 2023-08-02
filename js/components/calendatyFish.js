@@ -1,16 +1,7 @@
 
 export const calendaryFish = async () => {
-    const dataCurrent = document.querySelectorAll('.fish-cards-data__day')
-    const weekDay = document.querySelectorAll('.week-day');
     const percent = document.querySelectorAll('.percent svg circle:last-child');
     const percentNum = document.querySelectorAll('.percent-num')
-	const calendarIem  = document.querySelectorAll('.calendar-item')
-	console.log(percent);
-	console.log(calendarIem);
-	function randomNumb(min, max) {
-		return (Math.random() * (max - min) + min).toFixed(0)
-	}
-
 	
 	const filterFish =  () => {
 		for(let i = 0; i < percent.length; i++) {
