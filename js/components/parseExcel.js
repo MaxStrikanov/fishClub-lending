@@ -126,7 +126,7 @@ const parseExcel = async () => {
 						</g>
 						<g data-z-index="0.1" opacity="1" transform="translate(38,45) scale(1 1)" clip-path="none" style="cursor: pointer;" aria-hidden="false">
 							<path fill="#72A8B8" d="M 807 35.28 A 0 0 0 1 1 807 35.28 Z" data-z-index="-1" fill-opacity="0.25" visibility="hidden"></path>
-							<path fill="#136E88" d="M 89 55.912000000000006 A 4 4 0 1 1 89.00399999933333 55.911998000000175 Z" opacity="1" tabindex="-1" role="img" aria-label="x, 0, 1,764. кг." style="outline: none;" stroke-width="0.0025244915093498577"></path>
+							<path fill="#136E88" d="M 89 55.91 A 4 4 0 1 1 89.00399999933333 55.91 Z" opacity="1" tabindex="-1" role="img" aria-label="x, 0, 1,764. кг." style="outline: none;" stroke-width="0.0025244915093498577"></path>
 							<path fill="#72A8B8" d="M 269 51.879999999999995 A 4 4 0 1 1 269.00399999933336 51.879998000000164 Z" opacity="1" tabindex="-1" role="img" aria-label="x, 1, 1,860. кг." style="outline: none;" stroke-width="0.000009869571931497845"></path>
 							<path fill="#72A8B8" d="M 448 66.16 A 4 4 0 1 1 448.00399999933336 66.15999800000016 Z" opacity="1" tabindex="-1" role="img" aria-label="x, 2, 1,520. кг." style="outline: none;" stroke-width="0.002849604801500538"></path>
 							<path fill="#72A8B8" d="M 628 92.2 A 4 4 0 1 1 628.0039999993334 92.19999800000016 Z" opacity="1" tabindex="-1" role="img" aria-label="x, 3, 900. кг." style="outline: none;" stroke-width="0.0025244915093498577"></path>
@@ -136,25 +136,25 @@ const parseExcel = async () => {
 						</g>
 						</g>
 						<g data-z-index="6" opacity="1" transform="translate(38,45) scale(1 1)" aria-hidden="true" style="cursor: pointer;"><g data-z-index="1" transform="translate(71,30)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[0]['caught'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[0]['chart'])} кг</text>
 						</g>
 						<g data-z-index="1" transform="translate(250,26)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[1]['caught'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[1]['chart'])} кг</text>
 						</g>
 						<g data-z-index="1" transform="translate(430,40)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[2]['caught'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[2]['chart'])} кг</text>
 						</g>
 						<g data-z-index="1" transform="translate(614,66)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[3]['caught'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[3]['chart'])} кг</text>
 						</g>
 						<g data-z-index="1" transform="translate(789,13)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[4]['caught'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[4]['chart'])} кг</text>
 						</g>
 						<g data-z-index="1" transform="translate(968,45)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[5]['caught'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[5]['chart'])} кг</text>
 						</g>
 						<g data-z-index="1" transform="translate(1147,54)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[6]['caught'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[6]['chart'])} кг</text>
 						</g>
 					</g>
 				</svg>`

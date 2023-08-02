@@ -1,3 +1,12 @@
+export const modal = () => {
+	document.querySelector('.btn-phone').onclick = () => {
+		document.getElementById('openModal').classList.toggle('open');
+	}
+	}
+
+
+
+
 const toggleMenu = () => {
 	const menuToggle = document.querySelector('.menu-toggle input ');
 	const menuItems = document.querySelector('.menu-items');
@@ -8,3 +17,6 @@ const toggleMenu = () => {
 }
 
 export default toggleMenu;
+
+
+

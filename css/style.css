@@ -339,6 +339,7 @@ h4  {
 .fish-cards-img-weight {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
 }
 .fish-cards-chart__tag {
@@ -371,19 +372,16 @@ span.weight-str  {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
+    margin: 40px 0 120px 0;
     gap: 40px;
 }
-
 .gallery-item {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-
 .gallery-item img {
-    width: 100%;
-    
+    width: 100%;   
 }
 .gallery-item-link {
     position: relative;
@@ -682,11 +680,14 @@ ul.rules-list-items {
 }
 
 /**********Календарь рыбака*****************/
-
 .calendar {
     display: grid;
-    grid-template-columns: repeat(5, 225px);
+    grid-template-columns: repeat(6, 180px);
 }
+/* .calendar {
+    display: grid;
+    grid-template-columns: repeat(5, 225px);
+} */
 .calendary-fish-items {
     display: grid;
     grid-template-columns: 224px 1fr;
@@ -1084,14 +1085,14 @@ input[type=checkbox] {
   -webkit-appearance: none;
 
   -moz-appearance: none;
-       appearance: none;
-  font: inherit;
-  color: currentColor;
-  width: 20px;
-  height: 20px;
-  border: 1px solid var(--main-colors-light-text);
-  display: grid;
-  place-content: center;
+    appearance: none;
+    font: inherit;
+    color: currentColor;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--main-colors-light-text);
+    display: grid;
+    place-content: center;
 }
 
 input[type=checkbox]::before {
@@ -1109,4 +1110,294 @@ input[type=checkbox]::before {
 
 input[type=checkbox]:checked::before {
     transform: scale(1);
+}
+
+
+/*************Модальное окно*********************/
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal.open{
+    opacity: 1; /* делаем окно видимым */
+	pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* для отображения модального окна по центру */
+  }
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* background-color: #fff; */
+    background-image: url('/img/Formbg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* -webkit-background-clip: padding-box; */
+    /* background-clip: padding-box; */
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: flex;
+    align-items: unset;
+    padding: 40px;
+    justify-content: space-between;
+}
+.modal-title {
+    color: var(--main-colors-dark);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    max-width: 350px;
+    padding: 0;
+    margin: 0;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 40px 40px;
+    gap: 40px;
+}
+.modal-body input:is([type=text],[type=phone]) {
+    background: transparent;
+    width: 100%;
+    outline: 0;
+    outline-offset: 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--main-colors-light-text);
+    color: var(--main-colors-light-text);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%;
+    background-clip: padding-box;
+}
+.modal-body  span {
+    color: var(--main-colors-dark);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+.modal-body .primary-btn {
+    margin-top: 10px;
+    width: 100%;
+}
+.modal-body .form-control {
+    line-height: 1.1;
+    display: flex;
+    gap: 0.5em;
+    font-size: 14px;
+    color: var(--main-colors-light-text);
+    align-items: center;
+}
+
+.modal-body .logo-items img {
+    width: 44px;
+    height: 44px;
+}
+.modal-body .logo-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.modal-body .logo-items span{
+    color: var(--main-colors-accent);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13px;
+    max-width: 55px;
+}
+.modal-body {
+    padding-bottom: 40px;
+}
+
+/*********popup****************/
+
+.popup {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.popup.open{
+    opacity: 1; /* делаем окно видимым */
+	pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.popup-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .popup-dialog {
+        max-width: 600px;
+        margin: 30px auto;
+    }
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.popup-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff; 
+    background-image: url('/img/thanksbg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* -webkit-background-clip: padding-box; */
+    /* background-clip: padding-box; */
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .popup-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.popup-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.popup-title {
+    color: var(--main-colors-dark);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    max-width: 350px;
+    padding: 0;
+    margin: 0;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 1;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+.popup-text {
+    color: var(--main-colors-light-text);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%;
+}
+.popup-body .logo-items img {
+    width: 44px;
+    height: 44px;
+}
+.popup-body .logo-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.popup-body .logo-items span{
+    color: var(--main-colors-accent);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13px;
+    max-width: 55px;
+}
+.popup-body {
+    padding: 40px 0 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
