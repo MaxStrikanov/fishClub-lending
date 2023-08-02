@@ -24,16 +24,23 @@ export const renderWidgetForecast = (widget, data) => {
 		const dayOfWeek = weekdays[date.getDay()];
 
 		function randomColor() {
-			
+
 		}
 
-
-		function colorCircle ()  {
-			let color = '#F19450'
+		function randomNumb() {
+			let min, max
 			if(dayOfWeek == 'воскресенье' || dayOfWeek == 'суббота') {
-				color = '#6BAE37'
+				min = 80
+				max = 97
 			}
-			return color
+			else if(dayOfWeek == 'пятница' || dayOfWeek == 'четверг' || dayOfWeek == 'среда') {
+				min = 50
+				max = 79
+			} else {
+				min = 49
+				max = 64
+			}
+			return (Math.random() * (max - min) + min).toFixed(0)
 		}
 		const widgetDayItem = document.createElement('div');
 
@@ -44,13 +51,13 @@ export const renderWidgetForecast = (widget, data) => {
 				<div class="data-short">${addZero(date.getDate())}.${addZero(date.getMonth() + 1)}</div>
 			</div>
 			<div class="weather-img">
-				<img src="/icon/${item.weather[0].icon}.svg" alt="">
+				<img src="icon/${item.weather[0].icon}.svg" alt="">
 				<p class="weather-description">${item.weather[0].description}</p>
 			</div>
 			<div class="weather-deg">${(item.main.temp - 273.15).toFixed(0)}°</div>
 			<div class="weather-wind">
 				<div class="weather-wind_route">
-					<img style = "transform: rotate(${135 + item.wind.deg}deg);" src="/icon/wind.svg" alt="">
+					<img style = "transform: rotate(${135 + item.wind.deg}deg);" src="icon/wind.svg" alt="">
 				</div>
 				<div class="weather-wind_speed">${(item.wind.speed).toFixed(0)} м/c</div>
 			</div>
@@ -61,26 +68,26 @@ export const renderWidgetForecast = (widget, data) => {
 			<div class="percent">
 					<svg>
 						<circle cx="30" cy="30" r="30"></circle>
-						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(340px - (340px * 81) / 100); stroke:${colorCircle()};">
+						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(340px - (340px * 1) / 100); stroke: #6BAE37;">
 						</circle>
 					</svg>
-					<div class="percent-num">72%</div>
+					<div class="percent-num">${randomNumb()}%</div>
             	</div>
 				<div class="percent">
 					<svg>
 						<circle cx="30" cy="30" r="30"></circle>
-						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(340px - (340px * 78) / 100); stroke: ${colorCircle()}">
+						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(340px - (340px * 1) / 100); stroke: #6BAE37;">
 						</circle>
 					</svg>
-					<div class="percent-num">72%</div>
+					<div class="percent-num">${randomNumb()}%</div>
             	</div>
 				<div class="percent">
 					<svg>
 						<circle cx="30" cy="30" r="30"></circle>
-						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(340px - (340px * 87) / 100); stroke: ${colorCircle()};">
+						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(340px - (340px * 1) / 100); stroke: #6BAE37;">
 						</circle>
 					</svg>
-					<div class="percent-num">72%</div>
+					<div class="percent-num">${randomNumb()}%</div>
             	</div>
 		`);
 
