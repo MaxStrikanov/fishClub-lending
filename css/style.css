@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
 }
@@ -129,58 +131,7 @@ nav {
 }
 
 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: inherit;
-    }
-    .menu-items {
-        display: none;
-    }    
-    .menu-items.open {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 1rem;
-        display: flex;
-        overflow: hidden;
-        border-top: 1px solid rgb(173, 167, 167);
-    }
-    .menu-items li {
-        margin: 0 auto;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 118.1%;
-        width: 100%;
-        text-align: center;
-    }
-    .menu-items li a {
-        padding: 10px;
-        width: 100%;
-        display: block; 
-        border-bottom: 1px solid rgb(231, 228, 228);
-    }
-    .menu-items li:hover a {
-        color: var(--primary);
-    }
-    .menu-toggle {
-        display: block;
-        font-size: 1.5rem;
-        color: #fff;
-        cursor: pointer;
-    }
-    .menu-items li a:after {
-        display: none; 
-    }
-    .menu-items  li a:hover:after,
-    .menu-items  li a:focus:after {
-        width: 0%;
-    }
-    .logo {
-        max-width: 130px;
-        height: 50px;
-    }
-}
+
 
 .menu-toggle label{
     display:flex;
@@ -385,6 +336,8 @@ h4  {
     gap: 1px;
     position: relative;
     margin: 40px 0 120px 0;
+    overflow-x: auto;
+    scroll-snap-type: y mandatory;
 }
 .fish-cards-img-weight {
     display: flex;
@@ -616,6 +569,8 @@ ul.rules-list-items {
     font-weight: 500;
     line-height: 150%;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 .prices-item-text__warn img {
     margin-top: 10px;
@@ -631,7 +586,7 @@ ul.rules-list-items {
 }
 .prices-item-text__warn {
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     gap: 10px;
 }
 .fish-cost-item {
@@ -730,15 +685,15 @@ ul.rules-list-items {
 }
 
 /**********Календарь рыбака*****************/
+
 .calendar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 225px);
 }
 .calendary-fish-items {
     display: grid;
     grid-template-columns: 224px 1fr;
-    grid-template-rows: 1fr 155px;
+    grid-template-rows: 1fr;
     margin: 40px 0 120px 0;
 }
 .calendary-fish-item__img {
@@ -851,6 +806,7 @@ ul.rules-list-items {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-top: 65px;
 }
 .percent-num {
     position: absolute;
@@ -1009,6 +965,8 @@ svg circle:nth-child(2) {
     padding: 15px 40px;
     justify-content: center;
     align-items: center;
+    width: fit-content;
+    border: none;
     gap: 10px;
     background: var(--main-colors-white);
 }
@@ -1078,3 +1036,32 @@ svg circle:nth-child(2) {
     line-height: 150%
 }
 
+.footer-item__contacts img {
+    max-width: 100%;
+}
+.d-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.swiper {
+    width: 100% ;
+    height: 200px;
+
+}
+::-webkit-scrollbar {
+    width: 18px; /* ширина для вертикального скролла */
+    height: 6px; /* высота для горизонтального скролла */
+    background-color: var(--sub-colors-table-background, #F3F7F9);
+}
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    margin-top: 20px;
+    background-color: var(--main-colors-accent);
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #253861;
+}
