@@ -71,7 +71,6 @@ const parseExcel = async () => {
 
             const card =  document.querySelector('.fish-cards-items');
             
-
                 card.insertAdjacentHTML('beforeend', `
                         <div class="fish-cards-item">
                             <div class="fish-cards-data">
@@ -81,7 +80,7 @@ const parseExcel = async () => {
                             <div class="fish-cards-chart">
                                     <!-- <span class="fish-cards-weight">1 764</span>
                                         <span class="fish-cards-text">кг.</span> -->
-                                <div class="fish-cards-chart__tag"></div>	
+                                <div class="fish-cards-chart__tag">${i == 0 ? 'сегодня' : ''}</div>	
                             </div>
                                 <div class="fish-cards-stocked">
                                     <div class="fish-cards-fished">

@@ -1,5 +1,3 @@
-
-
 const toggleMenu = () => {
 	const menuToggle = document.querySelector('.menu-toggle input ');
 	const menuItems = document.querySelector('.menu-items');
