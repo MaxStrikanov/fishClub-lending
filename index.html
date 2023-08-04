@@ -498,21 +498,19 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<h3 class="modal-title">Заказ обратного звонка</h3>
-				<a href="#close" title="Close" class="close">
-					<img src="img/close.svg" alt="">
-				</a>
+				<img src="img/close.svg" alt="" class="close" width="45px" height="45px">
 			</div>
 			<div class="modal-body">
-				<form action="">
-						<input type="text" placeholder="Имя Фамилия">
-						<input type="phone" placeholder="+7 --- --- -- --">
-						<input type="text" placeholder="Ваш вопрос">
+				<form action="" id="formSend" method="POST">
+						<input type="text" placeholder="Имя Фамилия" required>
+						<input type="text" placeholder="+7 --- --- -- --" required>
+						<input type="text" placeholder="Ваш вопрос" required>
 						<label class="form-control">
 							<input type="checkbox" name="checkbox" />
 							Я даю согласие на обработку
 							<span>Персональных данных</span>
 						</label>
-						<button class="primary-btn">Оставить заявку</button>
+						<button class="primary-btn" >Оставить заявку</button>
 					</form>
 
 					<div class="logo-items">

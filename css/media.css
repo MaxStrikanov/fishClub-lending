@@ -1,32 +1,46 @@
-
-
 @media (max-width: 1100px) {
 	.header-sub, .prices-items,.title-wrapper
 	{
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 	}
 	.header-contacts-items {
 		display: none;
 	}
 	div#app {
 		overflow-x: scroll;
-		scroll-snap-type: y mandatory;
+		-ms-scroll-snap-type: y mandatory;
+		    scroll-snap-type: y mandatory;
 		overflow-y: hidden;
 	}
 }
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
-        align-items: inherit;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: inherit;
+            -ms-flex-align: inherit;
+                align-items: inherit;
     }
     .menu-items {
         display: none;
     }    
     .menu-items.open {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-top: 1rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         overflow: hidden;
         border-top: 1px solid rgb(173, 167, 167);
@@ -72,7 +86,8 @@
    	.history {
 		gap: 2px ;
 		margin: 20px 0 40px 0 ;
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 	}
 	.title {
 		font-size: 19px;
@@ -84,7 +99,8 @@
 		font-size: 14px;
 	}
 	.footer-items {
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 		gap: 0px;
 		padding: 0px;
 	}
@@ -92,17 +108,26 @@
 		display: none;
 	}
 	.footer-item {
-		flex-wrap: wrap;
-		flex-direction: column;
-		justify-content: center;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		gap: 10px;
 	}
 	.footer-item > a {
 		font-size: 12px;
 	}
 	.footer-item__contact {
-		flex-wrap: wrap;
-		justify-content: space-between;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 	.footer-item__contact-phone {
 		font-size: 14px;
@@ -125,12 +150,13 @@
 		height: 54px;
 	}
 	.large-banner {
-		margin-top: 24px;
-		height: 159px;
+		margin: 24px 0 25px 0;
+		height: 100%;
 	}
 	.large-banner img {
 		height: 100%;
-		object-fit: cover;
+		-o-object-fit: cover;
+		   object-fit: cover;
 	}
 	.gallery-item {
 		display: block;
@@ -139,10 +165,21 @@
 		padding: 15px 30px;
 	}
 	.gallery-items {
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
 		display: inline-flex;
-		align-items: flex-start;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
 		margin-top: 10px;
 		gap: 10px;
+	}
+	.gallery-items,
+	.calendary-fish-items,
+	.rules-items,
+	.sales-items, 
+	.prices-items {
+		margin: 40px 0 40px 0px;
 	}
 	.fish-cards-items {
 		overflow-x: scroll;
@@ -165,8 +202,10 @@
 		gap: 15px;
 		overflow-x: auto;
 		overflow-y: hidden;
-		scroll-snap-type: y mandatory;
-		flex-wrap: nowrap;
+		-ms-scroll-snap-type: y mandatory;
+		    scroll-snap-type: y mandatory;
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
 	}
 	.prices-item:last-child {
 		max-width: 100%;
@@ -185,12 +224,24 @@
 		font-size: 12px;
 		max-width: 100%;
 	}
-
 	.fish-cost-item {
-		grid-template-columns: 140px 150px 90px;
+		-ms-grid-columns: 140px 1fr 1fr;
+		grid-template-columns: 140px 1fr 1fr;
+		-ms-grid-rows: 85px;
 		grid-template-rows: 85px;
 	}
-
+	.fish-cost-item > *:nth-child(1) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+	}
+	.fish-cost-item > *:nth-child(2) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 2;
+	}
+	.fish-cost-item > *:nth-child(3) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 3;
+	}
 	.fish-cost-item img {
 		max-width: 100%;
 	}
@@ -211,11 +262,14 @@
 
 	.calendary-fish-items {
 		overflow-x: scroll;
-		scroll-snap-type: y mandatory;
+		-ms-scroll-snap-type: y mandatory;
+		    scroll-snap-type: y mandatory;
 		overflow-y: hidden;
 	}
 	.fish-cards-items {
+		display: -ms-grid;
 		display: grid;
+		-ms-grid-columns: (180px)[7];
 		grid-template-columns: repeat(7, 180px);
 	}
 	.gallery-item {

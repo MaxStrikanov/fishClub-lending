@@ -56,7 +56,8 @@ export const renderWidgetToday = (widget, data) => {
 export const renderWidgetForecast = (widget, data) => {
 	
 	const forecast = data.list.filter(item => 
-		new Date(item.dt_txt).getHours() === 12 
+		new Date(item.dt_txt).getHours() === 12
+		
 	);
 		const items = forecast.map((item) => {
 		const date = new Date(item.dt_txt);
