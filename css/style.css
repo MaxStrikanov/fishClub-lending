@@ -1903,7 +1903,7 @@ input[type=checkbox]:checked::before {
     
 }
 .event-modal-dialog {
-    max-width: calc(56%);
+    max-width: 1080px;
 }
 .event-modal-body__text {
    color: var(--main-colors-light-text);
