@@ -6,7 +6,7 @@ export const calendaryFish = async () => {
 	const filterFish =  () => {
 		for(let i = 0; i < percent.length; i++) {
 			let nibble = percentNum[i].textContent.slice(0, -1)
-			let total = 188.4 - (188.4 * +nibble) / 100
+			let total = 188.49 - (188.49 * +nibble) / 100
 		if (nibble > 80) {
 			percent[i].style.cssText = `stroke-dashoffset: ${total}; stroke: #6BAE37;`	
 		}
