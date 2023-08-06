@@ -502,15 +502,15 @@
 			</div>
 			<div class="modal-body">
 				<form action="" id="formSend" method="POST">
-						<input type="text" placeholder="Имя Фамилия" required>
-						<input type="text" placeholder="+7 --- --- -- --" required>
-						<input type="text" placeholder="Ваш вопрос" required>
+						<input type="text" placeholder="Имя Фамилия">
+						<input type="text" placeholder="+7 --- --- -- --">
+						<input type="text" placeholder="Ваш вопрос">
 						<label class="form-control">
 							<input type="checkbox" name="checkbox" />
 							Я даю согласие на обработку
 							<span>Персональных данных</span>
 						</label>
-						<button class="primary-btn" >Оставить заявку</button>
+						<button class="primary-btn" disabled>Оставить заявку</button>
 					</form>
 
 					<div class="logo-items">
@@ -545,13 +545,36 @@
 	</div>
 </div>
 
+<div class="event-modal ">
+	<div class="event-modal-dialog " >
+		<div class="event-modal-content">
+			<div class="event-modal-header">
+				<div class="header-wrapper">
+					<h3 class="event-modal-title">${title}</h3>
+					<span class="event-modal-data">${data}</span>
+				</div>
+				<img src="img/close.svg" alt="" class="close" width="45px" height="45px">
+			</div>
+			<div class="event-modal-body">
+				<div class="event-modal-body__img">
+					<img src="img/news-1.png" alt="">
+				</div>
+				
+				<div class="event-modal-body__text">
+					Лишь предприниматели в сети интернет, вне зависимости от их уровня, должны быть объявлены нарушающими общечеловеческие нормы этики и морали. Также как существующая теория однозначно определяет каждого участника как способного принимать собственные решения касаемо системы обучения кадров, соответствующей насущным потребностям. Ясность нашей позиции очевидна: дальнейшее развитие различных форм деятельности.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
+</body>		
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" ></script>
 	<!-- <script src="https://kit.fontawesome.com/a0b2537197.js" crossorigin="anonymous"></script> -->
 	<script src="js/xlsx.full.min.js"></script> 
-	<script src="js/widget.js" type="module"  ></script>
+	<script src="js/index.js" type="module"  ></script>
 	
 	
 </body>

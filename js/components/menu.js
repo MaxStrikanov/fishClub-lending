@@ -1,18 +1,29 @@
 
 
-export const modal = () => {
+export const modalOpen = () => {
 	document.querySelector('.btn-phone').onclick = () => {
 		document.getElementById('openModal').classList.toggle('open');
 	}
 
 	document.getElementById('openModal').onclick = (e) => {
-		console.log(e.target);
 		if(!e.target.closest('.modal-content') || e.target.closest('.close')) {
 			document.getElementById('openModal').classList.toggle('open');
 		}
 	}
 }
 
+export const popupOpen = () => {
+	
+	document.getElementById('openpopup').classList.toggle('open');
+	document.getElementById('openpopup').onclick = (e) => {
+
+		if(e.target.closest('.close')) {
+			document.getElementById('openpopup').classList.toggle('open');
+		}
+	}
+}
+
+export const modalClose = () => {document.getElementById('openModal').classList.remove('open');}
 
 
 

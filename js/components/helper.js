@@ -67,26 +67,8 @@ export const calculateDewPoint = (temp, humidity) => {
 		
 }
 
-export const getWeatherForecastData = (data) => {
-	const forecast = data.list  
-	
 
-	const forecastData = forecast.map((item) => {
-		const date = new Date(item.dt_txt);
-		const weekdays = [
-			'воскресенье',
-			'понедельник',
-			'вторник',
-			'среда',
-			'четверг',
-			'пятница',
-			'суббота'
-		]
 
-	const dayOfWeek = weekdays[date.getDay()];
-	const weatherIcon = item.weather[0].icon;
 
-		return {dayOfWeek, weatherIcon}
-	})
-	return forecastData;
-}
+
+
