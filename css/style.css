@@ -1083,7 +1083,8 @@ svg circle {
     /* stroke-linecap: round; */
 }
 svg circle:nth-child(2) {
-    stroke-dasharray: 200px;
+    stroke-dasharray: 188.49px;
+    stroke-dashoffset: 188.49px;
 }
 
 .fish-nibble-item {
@@ -1903,7 +1904,7 @@ input[type=checkbox]:checked::before {
     
 }
 .event-modal-dialog {
-    max-width: calc(56%);
+    max-width: 1080px;
 }
 .event-modal-body__text {
    color: var(--main-colors-light-text);

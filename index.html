@@ -419,7 +419,7 @@
 					<div class="swiper-slide">
 						<div class="events-item ">
 							<span class="events-item-data">23 апрель 2023</span>
-							<p class="events-item-text">Новая парадигма реальности: обереги никого не защитили</p>
+							<p class="events-item-text">Оказывается, преступность никогда не была такой неорганизованной</p>
 						</div>
 					</div>
 					<div class="swiper-slide">
@@ -449,10 +449,10 @@
 			<div class="footer-item__feedback">
 				<div class="footer-item__feedback-form">
 					<h3 class="footer-item__feedback-title">Не нашли ответ на свой вопрос?<br>Оставьте заявку и мы свяжемся с вами.</h3>
-					<form action="">
-						<input type="text" placeholder="Имя Фамилия">
-						<input type="phone" placeholder="+7 --- --- -- --">
-						<input type="text" placeholder="Ваш вопрос">
+					<form method="post" action="api/send.php">
+						<input type="text" placeholder="Имя Фамилия" name="name">
+						<input type="text" placeholder="+7 --- --- -- --" name="phone">
+						<input type="text" placeholder="Ваш вопрос" name="msg">
 						<label class="form-control">
 							<input type="checkbox" name="checkbox" />
 							Я даю согласие на обработку
@@ -461,6 +461,7 @@
 							
 						
 						<button>Оставить заявку</button>
+						<input type="hidden" name="act" value="order">
 					</form>
 				</div>
 			</div>
@@ -471,11 +472,11 @@
 				<p class="footer-item__contacts-text">Расположен всего в 30 км от МКАД между<br> Бурцевским лесом и рекой Москвой</p>
 				<div class="footer-item__contact">
 					<a href="" class="footer-item__contact-phone">+7 987 654-32-10</a>
-					<a href="" class="footer-item__contact-messanger">
+					<a href="https://wa.me/79506143999?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20" class="footer-item__contact-messanger">
 						<img src="img/WhatsApp.svg" alt="">
 						<span>WhatsApp</span>
 					</a>
-					<a href="" class="footer-item__contact-messanger">
+					<a href="https://t.me/+79506143999" class="footer-item__contact-messanger">
 						<img src="img/Telegram.svg" alt="">
 						<span>Telegram</span>
 					</a>
@@ -501,16 +502,17 @@
 				<img src="img/close.svg" alt="" class="close" width="45px" height="45px">
 			</div>
 			<div class="modal-body">
-				<form action="" id="formSend" method="POST">
-						<input type="text" placeholder="Имя Фамилия">
-						<input type="text" placeholder="+7 --- --- -- --">
-						<input type="text" placeholder="Ваш вопрос">
+				<form action="" id="formSend" method="post" action="api/send.php">
+						<input type="text" placeholder="Имя Фамилия" name="name">
+						<input type="text" placeholder="+7 --- --- -- --" name="phone">
+						<input type="text" placeholder="Ваш вопрос" name="msg">
 						<label class="form-control">
 							<input type="checkbox" name="checkbox" />
 							Я даю согласие на обработку
 							<span>Персональных данных</span>
 						</label>
 						<button class="primary-btn" disabled>Оставить заявку</button>
+						<input type="hidden" name="act" value="order">
 					</form>
 
 					<div class="logo-items">

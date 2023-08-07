@@ -43,7 +43,7 @@ export const renderWidgetToday = (widget, data) => {
 			<div class="percent">
 					<svg>
 						<circle cx="30" cy="30" r="30"></circle>
-						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(340px - (340px * 84) / 100); stroke: #6BAE37;">
+						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: 188px - (188px * 84) / 100; stroke: #6BAE37;">
 						</circle>
 					</svg>
 					<div class="percent-num">${randomNumb()}%</div>
@@ -51,7 +51,7 @@ export const renderWidgetToday = (widget, data) => {
 				<div class="percent">
 					<svg>
 						<circle cx="30" cy="30" r="30"></circle>
-						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(340px - (340px * 78) / 100); stroke: #6BAE37;">
+						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: 188px - (188px * 78) / 100; stroke: #6BAE37;">
 						</circle>
 					</svg>
 					<div class="percent-num">${randomNumb()}%</div>
@@ -59,7 +59,7 @@ export const renderWidgetToday = (widget, data) => {
 				<div class="percent">
 					<svg>
 						<circle cx="30" cy="30" r="30"></circle>
-						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(340px - (340px *65) / 100); stroke: #6BAE37;">
+						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: 188px - (188px *65) / 100; stroke: #6BAE37;">
 						</circle>
 					</svg>
 					<div class="percent-num">${randomNumb()}%</div>
@@ -130,7 +130,7 @@ export const renderWidgetForecast = (widget, data) => {
 			<div class="percent">
 					<svg>
 						<circle cx="30" cy="30" r="30"></circle>
-						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(340px - (340px * 1) / 100); stroke: #6BAE37;">
+						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(188px - (188px * 1) / 100); stroke: #6BAE37;">
 						</circle>
 					</svg>
 					<div class="percent-num">${randomNumb()}%</div>
@@ -138,7 +138,7 @@ export const renderWidgetForecast = (widget, data) => {
 				<div class="percent">
 					<svg>
 						<circle cx="30" cy="30" r="30"></circle>
-						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(340px - (340px * 1) / 100); stroke: #6BAE37;">
+						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(188px - (188px * 1) / 100); stroke: #6BAE37;">
 						</circle>
 					</svg>
 					<div class="percent-num">${randomNumb()}%</div>
@@ -146,7 +146,7 @@ export const renderWidgetForecast = (widget, data) => {
 				<div class="percent">
 					<svg>
 						<circle cx="30" cy="30" r="30"></circle>
-						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(340px - (340px * 1) / 100); stroke: #6BAE37;">
+						<circle cx="30" cy="30" r="30" style = "stroke-dashoffset: calc(188px - (188px * 1) / 100); stroke: #6BAE37;">
 						</circle>
 					</svg>
 					<div class="percent-num">${randomNumb()}%</div>
