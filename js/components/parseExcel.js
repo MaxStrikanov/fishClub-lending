@@ -25,10 +25,6 @@ const parseExcel = async () => {
             return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
             }
 
-        const totalCost = dataList.reduce((prev, item) => {
-            return prev + item['Сумма']
-        }, 0) 
-
         // document.querySelector('.result-block span').textContent = numberWithSpaces(totalCost);
         const weekdays = [
             'воскресенье',
@@ -74,8 +70,8 @@ const parseExcel = async () => {
                 card.insertAdjacentHTML('beforeend', `
                         <div class="fish-cards-item">
                             <div class="fish-cards-data">
-                                <div class="fish-cards-data__week">${aryDates[i] }</div>
-                                <div class="fish-cards-data__day">${aryDatesShort[i]}</div>     
+                                <div class="fish-cards-data__week">${dataList[i]['День недели']}</div>
+                                <div class="fish-cards-data__day">${dataList[i]['Дата']}</div>     
                             </div>
                             <div class="fish-cards-chart">
                                     <!-- <span class="fish-cards-weight">1 764</span>
@@ -87,7 +83,7 @@ const parseExcel = async () => {
                                         <p>Зарыблено</p>
                                         <div class="fish-cards-img-weight">
                                             <img src="img/fishing-1.png" alt="">
-                                            <span class="weight-num">${dataList[i]['caught']}</span>
+                                            <span class="weight-num">${dataList[i]['Зарыблено']}</span>
                                             <span class="weight-str">кг.</span>
                                         </div>
                                     </div>
@@ -95,7 +91,7 @@ const parseExcel = async () => {
                                 <p>Выловлено</p>
                                 <div class="fish-cards-img-weight">
                                     <img src="img/fishing-2.png" alt="">
-                                    <span class="weight-num">${dataList[i]['stocked']}</span>
+                                    <span class="weight-num">${dataList[i]['Выловлено']}</span>
                                     <span class="weight-str">кг.</span>
                                 </div>
                             </div>
@@ -136,25 +132,25 @@ const parseExcel = async () => {
 						</g>
 						</g>
 						<g data-z-index="6" opacity="1" transform="translate(38,45) scale(1 1)" aria-hidden="true" style="cursor: pointer;"><g data-z-index="1" transform="translate(71,30)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[0]['chart'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[0]['График'])} кг</text>
 						</g>
 						<g data-z-index="1" transform="translate(250,26)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[1]['chart'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[1]['График'])} кг</text>
 						</g>
 						<g data-z-index="1" transform="translate(430,40)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[2]['chart'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[2]['График'])} кг</text>
 						</g>
 						<g data-z-index="1" transform="translate(614,66)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[3]['chart'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[3]['График'])} кг</text>
 						</g>
 						<g data-z-index="1" transform="translate(789,13)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[4]['chart'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[4]['График'])} кг</text>
 						</g>
 						<g data-z-index="1" transform="translate(968,45)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[5]['chart'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[5]['График'])} кг</text>
 						</g>
 						<g data-z-index="1" transform="translate(1147,54)" style="cursor: pointer;">
-							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[6]['chart'])} кг</text>
+							<text font-family="-Monserat," x="5" data-z-index="1" y="16" style="color: #264156; font-size: 20px; font-weight: bold; fill: #264156;">${numberWithSpaces(dataList[6]['График'])} кг</text>
 						</g>
 					</g>
 				</svg>`

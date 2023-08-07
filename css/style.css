@@ -21,6 +21,10 @@ body {
 a {
     text-decoration: none;
 }
+input[type="submit"] {
+    width: fit-content;
+    padding: 20px 40px;
+}
 .container {
     width: min(100% - 1em, 1300px);
     margin-inline: auto;
