@@ -1916,3 +1916,355 @@ input[type=checkbox]:checked::before {
     font-weight: 500;
     line-height: 180%;     
 }
+
+
+/***********************************/
+.today-gr{
+    margin-top: 0;
+    margin-left: 17px;
+    padding-top: 135px;
+    overflow: visible;
+    width: 0;
+    height: 0;
+    color: #136E88;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    letter-spacing: 2.94px;
+    text-transform: uppercase;
+}
+
+.graph-warp {
+    overflow: auto;
+    max-width: 100%;
+    margin: 40px 0 120px 0;
+    padding-bottom: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.graph-warp::-webkit-scrollbar {
+    height: 4px;
+}
+.graph-warp::-webkit-scrollbar-thumb { 
+    background: #136E88;
+}
+.graph-warp::-webkit-scrollbar-track { 
+    background: #F3F7F9;
+}
+.graph {
+    gap: 24px;
+    width: 1304px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 40px 0;
+    background: url(../img/graphbg.svg);
+    background-position: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.div-graph,
+.div1-graph {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.div1-graph {
+    font-size: 18px;
+    font-weight: 600;
+    color: #264156;
+}
+.parent-graph {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+}
+.frame-parent-graph,
+.group-graph,
+.parent-graph {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.group-graph {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: #f3f7f9;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+}
+.frame-parent-graph {
+    position: relative;
+    background-color: #fff;
+    min-width: 1304px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    font-size: 14px;
+    color: #687a89;
+    font-family: Montserrat;
+}
+
+
+.div-fishg {
+    position: relative;
+    font-weight: 500;
+}
+.free-icon-fishing-7879963-1-fishg {
+    position: relative;
+    width: 12px;
+    height: 24px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.div1-fishg,
+.div2-fishg {
+    position: relative;
+}
+.div1-fishg {
+    line-height: 130%;
+    font-weight: 600;
+}
+.div2-fishg {
+    font-size: 14px;
+    font-weight: 500;
+    color: #687a89;
+}
+.free-icon-fishing-7879963-1-parent-fishg,
+.parent-fishg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+}
+.free-icon-fishing-7879963-1-parent-fishg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 18px;
+    color: #264156;
+}
+.parent-fishg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.free-icon-fishing-7879963-11-fishg {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.frame-group-fishg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 20px;
+}
+.frame-wrapper-fishg {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: #fff;
+    padding: 0 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.frame-container-fishg,
+.frame-wrapper-fishg,
+.parent1-fishg,
+.parent2-fishg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.parent1-fishg {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5px;
+}
+.frame-container-fishg,
+.parent2-fishg {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.frame-container-fishg {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: #f3f7f9;
+    padding:0 20px;
+}
+.parent2-fishg {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    gap: 5px;
+}
+.div31-fishg,
+.div38-fishg {
+    position: relative;
+    font-weight: 600;
+}
+.div38-fishg {
+    font-size: 14px;
+    line-height: 180%;
+    font-weight: 500;
+    color: #687a89;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 18px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+}
+.free-icon-fishing-7879963-1-parent10-fishg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5px;
+    text-align: left;
+    font-size: 18px;
+    color: #264156;
+}
+.div41-fishg {
+    position: relative;
+    font-size: 14px;
+    line-height: 180%;
+    font-weight: 500;
+    color: #687a89;
+}
+.parent11-fishg {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+    text-align: left;
+}
+.frame-parent-fishg,
+.frame-wrapper5-fishg,
+.parent11-fishg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.frame-wrapper5-fishg {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+}
+.frame-parent-fishg {
+    position: relative;
+    min-width: 1304px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    font-size: 14px;
+    color: #687a89;
+
+}
